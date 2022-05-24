@@ -1,0 +1,39 @@
+#intro{
+    background: #000;
+    color: #fff;
+    font-family: 'DRagonlord';
+}
+
+.introVideo{
+    position: relative;
+}
+
+.videoFondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introText {
+    background: #000;
+    font-size: 27rem;
+    text-align: center;
+    font-weight: 9;
+    mix-blend-mode: multiply;
+    margin: 0;
+    padding: 0;
+}
+
+.introLink{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    background: rgb(0, 0, 0);
+    font-weight: 7;
+}
