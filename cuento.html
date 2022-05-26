@@ -7,9 +7,6 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
 
     <title>CUENTO.COM | Crea tu Cuento</title>
@@ -53,7 +50,7 @@
     <!--Comienzo del Formulario-->
     <div class="formulario">
         <form action="">
-            <label for="title">TITULO</label>
+            <p>PONELE UN TITULO</p>
             <input type="text" id="title" name="TITULO">
         </form>
     
@@ -108,11 +105,14 @@
 
     <!--Inicio del Cuento-->
     <div class="cuento">
-        <h2>ACA VA EL TITULO</h2>
-        <p>aca va la historia</p>
-        <p>aca va el start</p>
-        <p>aca va el cuerpo</p>
-        <p>aca va el ending</p>
+        <h2 id="tituloCuento">ACA VA EL TITULO</h2>
+        <p id="history">aca va la historia</p>
+        <p id="start">aca va el start</p>
+        <div id="nombrePersonaje">
+
+        </div>
+        <p id="body">aca va el cuerpo</p>
+        <p id="ending">aca va el ending</p>
 
     </div>
 <!--Fin del Cuento-->
@@ -148,5 +148,6 @@
     
 
 <script src="navbar.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
