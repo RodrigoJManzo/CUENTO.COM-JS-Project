@@ -7,10 +7,14 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
 
     <title>CUENTO.COM | Crea tu Cuento</title>
 </head>
-<body>
+<body class="bodyCuento">
 
 <!--Comienzo del Header-->
 
@@ -43,25 +47,105 @@
 
 <!--fin del Header-->
 
-<!--Comienzo del Formulario-->
-    <form action="">
-        <label for="title">TITULO</label>
-        <input type="text" id="title" name="TITULO">
-    </form>
+<h1 class="tituloCuento"><strong>CREA TU PROPIA HISTORIA</strong></h1>
+<div class="todo">
+    
+    <!--Comienzo del Formulario-->
+    <div class="formulario">
+        <form action="">
+            <label for="title">TITULO</label>
+            <input type="text" id="title" name="TITULO">
+        </form>
+    
+        <p>Elije tu tipo de historia</p>
+    
+        <form>
+            <div>
+                <label for="sad">Triste</label>
+                <input class="selector" type="radio" name="hopping" id="sad" value="Triste" checked>
+            </div>
 
-    <p>Elije tu tipo de historia</p>
+           <br>
 
-    <form action="">
-        <input type="radio" name="" id="sad">
-        <label for="sad">Triste</label>
+           <div>
+                <label for="funny">Graciosa</label>
+                <input class="selector" type="radio" name="hopping" id="funny" value="Graciosa">
+           </div>
+            
+            <br>
 
-        <input type="radio" name="" id="funny">
-        <label for="funny">Graciosa</label>
+            <div>
+                <label for="tragedy">Tragedia</label>
+                <input class="selector" type="radio" name="hopping" id="tragedy" value="Tragedia">
+            </div> 
 
-        <input type="radio" name="" id="tragedy">
-        <label for="tragedy">Tragedia</label>
-    </form>
-<!--Fin del Formulario-->
+            <br>
+
+            <p>CREA TU CUENTO</p>
+            <button id="creador" type="button">
+                <i>
+                    <img src="images/ink.png" alt="">
+                </i>
+            </button>
+        </form>
+    </div>
+    <!--Fin del Formulario-->
+
+    <!--inicio de Datos-->
+    <div class="datos">
+
+        <p>
+            Bienvenido a CUENTO.COM, este sitio tiene como unico objetivo divertirse generando historias random y dar paso a la imaginacion. Esperamos que te diviertas y pases un buen rato!.  
+        </p>
+
+        <h2>SIEMPRE ES BUENO ACOMPASAR CON MUSICA!</h2>
+
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/10iDbXCfAdHpqFc6yjqXeo?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+    </div>
+    <!--Fin de Datos-->
+
+    <!--Inicio del Cuento-->
+    <div class="cuento">
+        <h2>ACA VA EL TITULO</h2>
+        <p>aca va la historia</p>
+        <p>aca va el start</p>
+        <p>aca va el cuerpo</p>
+        <p>aca va el ending</p>
+
+    </div>
+<!--Fin del Cuento-->
+
+</div>
+
+<!--Comienzo del Footer-->
+<footer>
+    <h4>CONTACTO</h4>
+    <ul>
+        <li>
+            <a href="">
+                <i><img src="images/github.png" alt=""></i>
+            </a></li>
+        <li>
+            <a href="">
+                <i><img src="images/facebook.png" alt=""></i>
+            </a></li>
+        <li>
+            <a href="">
+                <i><img src="images/instagram.png" alt=""></i>
+            </a></li>
+        <li>
+            <a href="">
+                <i><img src="images/whatsapp.png" alt=""></i>
+            </a></li>
+    </ul>
+    
+    <p>Designed by RDOMAN - 2022 -</p>
+    <p>Jus For Fun!</p>
+</footer>
+<!--Fin del Footer-->
+    
 
 <script src="navbar.js"></script>
 </body>
