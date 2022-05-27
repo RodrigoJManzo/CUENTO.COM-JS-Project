@@ -1,5 +1,4 @@
 
-
 // constantes
 const boton = document.querySelector("#creador")
 
@@ -78,6 +77,8 @@ function crear() {
         .then((data)=>{
         document.querySelector("#ending").textContent = data[randomNumber(5)]
     })
+
+    
      
 }
 

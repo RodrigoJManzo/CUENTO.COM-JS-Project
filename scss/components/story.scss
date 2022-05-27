@@ -5,6 +5,8 @@
     font-family: 'Roboto Slab', serif;
 }
 
+
+
 .tituloCuento{
     text-align: center;
     text-decoration:underline;
@@ -83,15 +85,34 @@
     }
     p{
         margin-top: 8rem;
-        margin-bottom: 8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .saveLoad{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            margin: 2rem;
+            button{
+                
+                img{
+                    width: 2cm;
+                    margin: 0;
+                    background-color: none;
+                }
+            }
+        }
     }
 }
 footer{
     h4{
         text-align: center;
-        margin-top: 4rem;
+        
     }
     ul{
         list-style: none;
