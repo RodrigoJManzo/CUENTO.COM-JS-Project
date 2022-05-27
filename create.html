@@ -4,9 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>CUENTO.COM | Crea tu Propio Cuento!</title>
 </head>
-<body>
+<body class="bodyCreate">
+
+<!--Comienzo del Header-->
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">CUENTO.COM</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a href="cuento.html" class="nav-link">REINICIAR CUENTO</a>
+            </li>
+            <li class="nav-item">
+                <a href="create.html" class="nav-link">CREA TU CUENTO</a>
+            </li>
+            <li class="nav-item">
+                <a href="cuento.html#nosotros" class="nav-link">NOSOTROS</a>
+            </li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+</header>
+
+<!--fin del Header-->
+
+    <div id="historia">
+        <div id="storyCreate">
+            <!--Comienzo del Formulario-->
+            <form id="storyData">
+
+                <label for="titulo">ESCRIBE AQUI TU TITULO</label>
+                <input id="titulo" type="text">
     
+                <br>
+                
+                <label for="comienzo">DALE UN COMIENZO</label>
+                <textarea name="" id="comienzo" cols="30" rows="10"></textarea>
+                
+                <br>
+    
+                <label for="history">AGREGALE UNA TRAMA</label>
+                <textarea name="" id="history" cols="30" rows="10"></textarea>
+    
+                <br>
+    
+                <label for="cuerpo">AGREGALE UN CUERPO</label>
+                <textarea name="" id="cuerpo" cols="30" rows="10"></textarea>
+    
+                <br>
+    
+                <label for="desenlace">PONLE UN DESENLACE</label>
+                <textarea name="Agregale un desenlace" id="desenlace" cols="30" rows="10"></textarea>
+    
+                <br>
+    
+                <label for="reflexion">AGREGALE UNA RELFEXION FINAL</label>
+                <textarea name="Agregale una reflexion" id="reflexion" cols="30" rows="10"></textarea>
+    
+                <br>
+    
+                <label for="creaCuento">CREA TU CUENTO</label>
+                <button type="button" id="createCuento">
+                    <img  src="images/ink.png" alt="Icono para crear un cuento">
+                </button>
+    
+            </form>
+            <!--Fin del Formulario-->
+        </div>
+        <div id="storyDisplay">
+            <!--comienzo del Area de display del cuento-->
+            <div id="cuento">
+
+            </div>
+            <!--fin del Area de display del cuento-->
+
+            <ul class="saveLoad">
+                <li>
+                    <label for="save">Guarda tu Cuento</label>
+                    <br>
+                    <button id="save" type="button">
+                        <img src="images/floppy-disk.png" alt="Icono de Save, para guardar el cuento en el localStorage"> 
+                    </button> 
+                    
+                </li>
+                <li>
+                    <label for="load">Carga un Cuento salvado</label>
+                    <br> 
+                    <button type="button" id="load">  
+                        <img src="images/upload.png" alt="Icono de Load, para cargar un cuento anterior">
+                    </button> 
+                    
+                </li>
+    
+                <li>
+                    <label for="print">Imprime tu cuento</label>
+                    <br>
+                    <button id="print" type="button">
+                        <img src="images/printer.png" alt="Icono de impresora, para imprimir el cuento">
+                    </button>
+                    
+                </li>
+            </ul>
+
+        </div>
+        
+
+    </div>
+    
+ 
+ <!--Comienzo del Footer-->
+<footer>
+    <h4>CONTACTO</h4>
+    <ul>
+        <li>
+            <a href="">
+                <i><img src="images/github.png" alt=""></i>
+            </a></li>
+        <li>
+            <a href="">
+                <i><img src="images/facebook.png" alt=""></i>
+            </a></li>
+        <li>
+            <a href="">
+                <i><img src="images/instagram.png" alt=""></i>
+            </a></li>
+        <li>
+            <a href="">
+                <i><img src="images/whatsapp.png" alt=""></i>
+            </a></li>
+    </ul>
+    
+    <p>Designed by RDOMAN - 2022 -</p>
+    <p>Jus For Fun!</p>
+</footer>
+<!--Fin del Footer-->
+    
+
+<script src="navbar.js"></script>
+ <script src="createStory.js" ></script>    
 </body>
 </html>

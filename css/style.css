@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 #intro {
   background: #000;
   color: #fff;
@@ -278,6 +279,74 @@ header nav ul li a:link {
 }
 header nav ul li a:visited {
   color: antiquewhite;
+}
+
+.bodyCreate {
+  background-color: #efead8;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+}
+
+#historia {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#storyCreate {
+  grid-area: 1/1/6/3;
+}
+
+#storyDisplay {
+  grid-area: 1/3/6/6;
+}
+
+#storyData {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#storyData textarea {
+  width: 80%;
+}
+#storyData button img {
+  width: 8rem;
+}
+
+#storyDisplay {
+  background-image: url(../../images/white-parchment-paper.jpg);
+  background-size: cover;
+}
+#storyDisplay #cuento h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+#storyDisplay #cuento p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.saveLoad {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.saveLoad li {
+  margin: 2rem;
+}
+.saveLoad li button img {
+  width: 5rem;
+  margin: 0;
+  background-color: none;
 }
 
 /*# sourceMappingURL=style.css.map */
