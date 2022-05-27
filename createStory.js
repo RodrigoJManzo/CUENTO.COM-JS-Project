@@ -15,7 +15,7 @@ boton.addEventListener("click", crear)
 function crear ()  {
     let titulo = document.querySelector('#titulo').value.toUpperCase();
     let title = document.createElement("h2");
-    title.innerHTML = `<h2 id="titulex"> ${titulo} </h2> `;
+    title.innerHTML = `<h2 id="textStory0"> ${titulo} </h2> `;
     console.log(title)
     
     let comienzo = document.querySelector('#comienzo').value;
@@ -55,8 +55,8 @@ function crear ()  {
 
 //creo la clase para los cuentos
 class CuentoHecho{
-    constructor(titulex, textStory1, textStory2, textStory3, textStory4, textStory5){
-        this.titulex = titulex;
+    constructor(textStory0, textStory1, textStory2, textStory3, textStory4, textStory5){
+        this.textStory0 = textStory0;
         this.textStory1 = textStory1;
         this.textStory2 = textStory2;
         this.textStory3 = textStory3;

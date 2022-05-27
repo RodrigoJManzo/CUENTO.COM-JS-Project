@@ -10,27 +10,30 @@ function randomNumber (max) {
     return Math.floor(Math.random()*max);
 }
 
-// funcion de crear el cuento
+// agrego el evento de escuchar al Boton
 boton.addEventListener("click", crear);
 
 function crear() {
+    //saco el titulo escrito en el DOM
     let titulo = document.querySelector("#title").value.toUpperCase();
     document.querySelector("#tituloCuento").textContent = titulo;
     console.log(titulo)
 
+    // traigo la historia desde el .json de manera random, utilizando el randomNumber para variar el elemento del array
    fetch('data/histories.json')
     .then((res)=> res.json())
     .then((data)=>{
         document.querySelector("#history").textContent = data[randomNumber(6)]
     })
 
+    // traigo los starts desde el .json de manera random, utilizando el randomNumber para variar el elemento del array
     fetch('data/starts.json')
         .then((res)=> res.json())
         .then((data)=>{
         document.querySelector("#start").textContent = data[randomNumber(5)]
         })
 
-
+    // traigo los un nombre Random de protagonista utilizando la API randomuser | despues, mediante un IF, lo agrego al DOM utilizando append, pero primero borro el contenido del Div, si es que ya fue presionado el boton con anterioridad.
     fetch("https://randomuser.me/api/?inc=name")
         .then((resp)=> resp.json())
         .then((data)=>{
@@ -49,16 +52,18 @@ function crear() {
             } 
         })
     
-
-    let body = document.querySelectorAll(".selector").id;
+    // usando querySelectorAll, traigo a JS todos los elementos Radio del Formulario, luego comparo si esta checkeado para mostrar el contenido 
+    let sad = document.querySelector("#sad").checked
+    let funny = document.querySelector("#funny").checked
+    let tragedy = document.querySelector("#tragedy").checked
     
-    if (body == "triste"){
+    if (sad = true){
         fetch('data/sad.json')
             .then((res)=> res.json())
             .then((data)=>{
             document.querySelector("#body").textContent = data[randomNumber(6)]
         })
-    } else if (body == "funny"){
+    } else if (funny = true){
         fetch('data/funny.json')
             .then((res)=> res.json())
             .then((data)=>{
@@ -71,7 +76,7 @@ function crear() {
             document.querySelector("#body").textContent = data[randomNumber(6)]
         })
     }
-
+    // traigo los ends desde el .json de manera random, utilizando el randomNumber para variar el elemento del array
     fetch('data/endings.json')
         .then((res)=> res.json())
         .then((data)=>{
