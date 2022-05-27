@@ -74,15 +74,15 @@ const elCuento = () =>{
     let textStory5 = document.querySelector('#textStory5');
 }
 
-let nuevoCuento = new CuentoHecho (titulex, textStory1, textStory2, textStory3, textStory4, textStory5)
+let nuevoCuento = new CuentoHecho (titulex, textStory1, textStory2, textStory3, textStory4, textStory5);
 
 if(localStorage.getItem("nuevoCuento") == null){
     cuento.push(nuevoCuento);
-    localStorage.setItem("nuevoCuento", JSON(cuento))
+    localStorage.setItem("nuevoCuento", JSON.stringify(cuento))
 }else{
-    const newCuento = JSON(localStorage.getItem(nuevoCuento))
+    const newCuento = JSON.parse(localStorage.getItem(nuevoCuento))
     newCuento.push(nuevoCuento)
-    localStorage.setItem("nuevoCuento", JSON(newCuento))
+    localStorage.setItem("nuevoCuento", JSON.stringify(newCuento))
 }
 
 //creo el evento para salvar
