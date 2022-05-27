@@ -1,8 +1,5 @@
-.header{
-    border-bottom: 1px solid #E2E8F0;
-}
-
 .navbar {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,4 +99,29 @@
 
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+header{
+    background-color: #5f7161;
+    text-decoration: none;
+    nav{
+        a:link{
+            color: antiquewhite;
+        }
+        a:visited{
+            color: antiquewhite;
+        }
+        ul{
+            li{
+                text-decoration: none;
+                a:link{
+                        color: antiquewhite;
+                    
+                }
+                a:visited{
+                    color: antiquewhite;
+                }
+            }
+        }
+    }
 }

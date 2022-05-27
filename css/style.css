@@ -44,26 +44,6 @@
   font-family: "Roboto Slab", serif;
 }
 
-header {
-  background-color: #5f7161;
-  text-decoration: none;
-}
-header nav a:link {
-  color: antiquewhite;
-}
-header nav a:visited {
-  color: antiquewhite;
-}
-header nav ul li {
-  text-decoration: none;
-}
-header nav ul li a:link {
-  color: antiquewhite;
-}
-header nav ul li a:visited {
-  color: antiquewhite;
-}
-
 .tituloCuento {
   text-align: center;
   text-decoration: underline;
@@ -168,11 +148,8 @@ footer p {
   margin-top: 3rem;
 }
 
-.header {
-  border-bottom: 1px solid #E2E8F0;
-}
-
 .navbar {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -267,6 +244,26 @@ footer p {
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+header {
+  background-color: #5f7161;
+  text-decoration: none;
+}
+header nav a:link {
+  color: antiquewhite;
+}
+header nav a:visited {
+  color: antiquewhite;
+}
+header nav ul li {
+  text-decoration: none;
+}
+header nav ul li a:link {
+  color: antiquewhite;
+}
+header nav ul li a:visited {
+  color: antiquewhite;
 }
 
 /*# sourceMappingURL=style.css.map */
