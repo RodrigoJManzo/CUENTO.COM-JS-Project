@@ -224,13 +224,13 @@ footer p {
   color: #482ff7;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #5f7161;
     width: 100%;
     border-radius: 10px;
     text-align: center;
