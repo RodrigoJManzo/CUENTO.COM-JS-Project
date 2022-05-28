@@ -25,4 +25,36 @@
     border-radius: 24px;
     border: 3px double #faebd7;
   };
+  
+  .todo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     
+    .formulario{
+      width: 50%;
+      position: relative;
+    }
+    .cuento{
+      width: 50%;
+      position: relative;
+    }
+  }
+
+  #historia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    #storyData{
+      width: auto;
+      position: relative;
+    }
+  }
+  #storyDisplay{
+    width: auto;
+    position: relative;
+  }
+
+
+
