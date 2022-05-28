@@ -227,7 +227,7 @@ footer p {
 @media only screen and (max-width: 1000px) {
   .nav-menu {
     position: fixed;
-    left: -100%;
+    left: -120%;
     top: 5rem;
     flex-direction: column;
     background-color: #5f7161;
@@ -397,11 +397,9 @@ header nav ul li a:visited {
 }
 .todo .formulario {
   width: 50%;
-  position: relative;
 }
 .todo .cuento {
   width: 50%;
-  position: relative;
 }
 
 #historia {
@@ -411,11 +409,9 @@ header nav ul li a:visited {
 }
 #historia #storyData {
   width: auto;
-  position: relative;
 }
 #historia #storyDisplay {
   width: auto;
-  position: relative;
 }
 
 @media (max-width: 850px) {
@@ -437,6 +433,10 @@ header nav ul li a:visited {
   }
   .todo .cuento {
     width: 100%;
+  }
+
+  body {
+    overflow: hidden;
   }
 }
 

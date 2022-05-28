@@ -34,11 +34,11 @@
     
     .formulario{
       width: 50%;
-      position: relative;
+    
     }
     .cuento{
       width: 50%;
-      position: relative;
+    
     }
   }
 
@@ -48,11 +48,11 @@
     flex-wrap: nowrap;
     #storyData{
       width: auto;
-      position: relative;
+      
     }
     #storyDisplay{
       width: auto;
-      position: relative;
+      
     }
   }
  
@@ -75,6 +75,9 @@
       .cuento{
         width: 100%;
       }
+    }
+    body{
+      overflow: hidden;
     }
   }
 
