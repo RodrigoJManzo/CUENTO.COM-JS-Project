@@ -1,4 +1,20 @@
 
+//mensaje de bienvenida usando sweetalert2
+Swal.fire({
+    title: 'Bienvenido a CUENTO.COM',
+    text: 'Diviertete creando o descubriendo cuentos!!.',
+    width: 600,
+    showConfirmButton: false,
+    timer: 2500,
+    padding: '3em',
+    color: '##5f7161',
+    background: '#efead8',
+    buttons: 'false',
+    backdrop: `
+    rgba(97, 118, 22, 0.4)`  
+  })
+
+
 // constantes
 const boton = document.querySelector("#creador")
 
@@ -83,7 +99,20 @@ function crear() {
         document.querySelector("#ending").textContent = data[randomNumber(5)]
     })
 
-    
+    Swal.fire({
+        title: 'DANOS UN SEGUNDO',
+        text: 'Realizando calculos astronómicos y analiznado el metauniverso!!',
+        imageUrl: 'https://media.giphy.com/media/2Z3lgZOhISkYU/giphy.gif',
+        showConfirmButton: false,
+        timer: 2500,
+        color: '##5f7161',
+        background: '#efead8',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Samuel L Jackson en Jurassic Park',
+        backdrop: `
+        rgba(97, 118, 22, 0.4)`
+      })
      
 }
 

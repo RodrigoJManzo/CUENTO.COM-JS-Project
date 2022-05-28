@@ -55,6 +55,27 @@ function crear ()  {
     areaCuento.appendChild(body)
     areaCuento.appendChild(end)
     areaCuento.appendChild(reflex) 
+
+    Swal.fire({
+        title: 'GENIAL HAS CREADO TU CUENTO',
+        text: 'Nuestros críticos lo estan analizando.... no se ve bien',
+        imageUrl: 'https://media.giphy.com/media/xbjJUZ8eiszuSNeYv6/giphy.gif',
+        showConfirmButton: false,
+        timer: 3500,
+        color: '##5f7161',
+        background: '#efead8',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Samuel L Jackson en Jurassic Park',
+        backdrop: `
+        rgba(97, 118, 22, 0.4)`
+      })
+
+
+
+
+
+
 }
 
 // funcion para salvar el cuento
