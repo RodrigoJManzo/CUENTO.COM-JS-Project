@@ -50,11 +50,32 @@
       width: auto;
       position: relative;
     }
+    #storyDisplay{
+      width: auto;
+      position: relative;
+    }
   }
-  #storyDisplay{
-    width: auto;
-    position: relative;
-  }
+ 
 
+  @media (max-width: 850px){
+    #historia{
+      flex-wrap: wrap;
+      #storyData{
+        width: 100%;
+      }
+      #storyDisplay{
+        width: 100%;
+      }
+    }
+    .todo{
+      flex-wrap: wrap;
+      .formulario{
+        width: 100%;
+      }
+      .cuento{
+        width: 100%;
+      }
+    }
+  }
 
 

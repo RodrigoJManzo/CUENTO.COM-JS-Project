@@ -324,6 +324,7 @@ header nav ul li a:visited {
 #storyDisplay {
   background-image: url(../../images/white-parchment-paper.jpg);
   background-size: cover;
+  border-radius: 20%;
 }
 #storyDisplay #cuento h2 {
   text-align: center;
@@ -412,10 +413,31 @@ header nav ul li a:visited {
   width: auto;
   position: relative;
 }
-
-#storyDisplay {
+#historia #storyDisplay {
   width: auto;
   position: relative;
+}
+
+@media (max-width: 850px) {
+  #historia {
+    flex-wrap: wrap;
+  }
+  #historia #storyData {
+    width: 100%;
+  }
+  #historia #storyDisplay {
+    width: 100%;
+  }
+
+  .todo {
+    flex-wrap: wrap;
+  }
+  .todo .formulario {
+    width: 100%;
+  }
+  .todo .cuento {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
