@@ -166,7 +166,6 @@ footer p {
 }
 
 .navbar {
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,7 +226,7 @@ footer p {
 @media only screen and (max-width: 1000px) {
   .nav-menu {
     position: fixed;
-    left: -120%;
+    left: -100%;
     top: 5rem;
     flex-direction: column;
     background-color: #5f7161;
