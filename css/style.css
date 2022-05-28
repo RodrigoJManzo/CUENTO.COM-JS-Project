@@ -343,10 +343,26 @@ header nav ul li a:visited {
 .saveLoad li {
   margin: 2rem;
 }
+.saveLoad li button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
 .saveLoad li button img {
   width: 5rem;
   margin: 0;
   background-color: none;
+}
+.saveLoad li button:hover {
+  transform: scale(1.1);
+}
+.saveLoad li a img {
+  width: 5rem;
+  margin: 0;
+  background-color: none;
+}
+.saveLoad li a img:hover {
+  transform: scale(1.1);
 }
 
 /* Firefox */

@@ -23,7 +23,7 @@
                     <a href="index.html" class="nav-link">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a href="cuento.html" class="nav-link">REINICIAR CUENTO</a>
+                    <a href="cuento.html" class="nav-link">CUENTO GENERATOR</a>
                 </li>
                 <li class="nav-item">
                     <a href="create.html" class="nav-link">CREA TU CUENTO</a>
@@ -104,7 +104,7 @@
     <!--Fin de Datos-->
 
     <!--Inicio del Cuento-->
-    <div class="cuento">
+    <div id="cuento" class="cuento">
         <h2 id="tituloCuento">Historias</h2>
         <p id="history">Dignas</p>
         <p id="start">de un</p>
@@ -117,10 +117,20 @@
             <li>
                 <label for="print">Imprime tu cuento</label>
                 <br>
-                <button>
+                <button id="print">
                     <img src="images/printer.png" alt="Icono de impresora, para imprimir el cuento">
                 </button>
             </li>
+
+            <li>
+                <label for="reload">Vuelve a empezar</label>
+                <br>
+                <a href="cuento.html" id="relaod" type="button">
+                    <img src="images/reload.png" alt="Icono de impresora, para imprimir el cuento">
+                </a>
+                
+            </li>
+
         </ul>
 
     </div>
